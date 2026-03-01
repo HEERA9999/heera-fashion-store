@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diamond fashion </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif;
+    background:#fdf6f0;
+    color:#333;
+}
+
+header{
+    background:#2e1a47;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+header h1{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+}
+
+nav{
+    margin-top:10px;
+}
+
+nav a{
+    color:#f8c8dc;
+    text-decoration:none;
+    margin:0 15px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:white;
+}
+
+.hero{
+    height:75vh;
+    background:linear-gradient(rgba(46,26,71,0.7),rgba(46,26,71,0.7)),
+    url('https://upload.wikimedia.org/wikipedia/en/3/3e/My_Fair_Lady_Ascot_scene.jpg');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero h2{
+    font-family:'Playfair Display', serif;
+    font-size:45px;
+}
+
+.section{
+    padding:60px 20px;
+    text-align:center;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:32px;
+    margin-bottom:40px;
+}
+
+.cards{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.card{
+    background:white;
+    width:260px;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+    padding-bottom:20px;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:320px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px 10px 5px;
+    font-family:'Playfair Display', serif;
+}
+
+.card p{
+    padding:0 15px;
+    font-size:14px;
+}
+
+.price{
+    font-size:20px;
+    font-weight:bold;
+    color:#2e1a47;
+    margin:10px 0;
+}
+
+.buy-btn{
+    display:inline-block;
+    padding:8px 18px;
+    background:#2e1a47;
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+    margin-top:8px;
+    transition:0.3s;
+}
+
+.buy-btn:hover{
+    background:#4b2c75;
+}
+
+footer{
+    background:#2e1a47;
+    color:white;
+    text-align:center;
+    padding:15px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .hero h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>My Fair Lady Boutique</h1>
+    <nav>
+        <a href="#costumes">Shop</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Royal Edwardian Costume Collection</h2>
+</section>
+
+<section id="costumes" class="section">
+    <h2>Shop Costumes</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/My_Fair_Lady_Ascot_scene.jpg">
+            <h3>Ascot Race Dress</h3>
+            <p>Elegant black & white Edwardian masterpiece.</p>
+            <div class="price">$1,250</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/Audrey_Hepburn_My_Fair_Lady_flower_girl.jpg">
+            <h3>Flower Girl Dress</h3>
+            <p>Vintage London street style costume.</p>
+            <div class="price">$450</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Audrey_Hepburn_My_Fair_Lady_ball_gown.jpg">
+            <h3>Embassy Ball Gown</h3>
+            <p>Luxury white satin royal gown.</p>
+            <div class="price">2,300</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Rex_Harrison_My_Fair_Lady.jpg">
+            <h3>Professor Higgins Suit</h3>
+            <p>Classic Edwardian gentleman attire.</p>
+            <div class="price">980</div>
+            <button class="buy-btn">Buy Now</button>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    © 2026 My Fair Lady Costume Boutique
+</footer>
+
+</body>
+</html>
